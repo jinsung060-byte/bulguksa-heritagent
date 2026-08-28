@@ -1,0 +1,14 @@
+pandas
+openpyxl
+matplotlib
+seaborn
+scikit-learn
+networkx
+python-dotenv
+jupyter
+ipykernel
+langchain
+langchain-community
+langchain-openai
+langchain-text-splitters
+faiss-cpu

@@ -1,0 +1,22 @@
+.env
+.venv/
+__pycache__/
+*.pyc
+
+.vscode/
+.chainlit/
+.files/
+
+data/
+notebooks/
+notebooks 기사/
+outputs/
+src/
+
+# 기존 불필요한 Vector DB 제외
+vectordb/*
+!vectordb/article_faiss/
+!vectordb/article_faiss/index.faiss
+!vectordb/article_faiss/index.pkl
+
+chroma.sqlite3
