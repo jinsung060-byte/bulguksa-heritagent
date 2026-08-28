@@ -33,13 +33,6 @@ embeddings = OpenAIEmbeddings(
     model="text-embedding-3-small"
 )
 
-
-# =========================================================
-# Vector DB 불러오기
-# =========================================================
-
-from pathlib import Path
-
 BASE_DIR = Path(__file__).resolve().parent
 
 LOCAL_DB_PATH = Path("C:/RAG_DB/article_faiss")
@@ -49,6 +42,7 @@ if LOCAL_DB_PATH.exists():
     VECTOR_DB_PATH = LOCAL_DB_PATH
 else:
     VECTOR_DB_PATH = SERVER_DB_PATH
+
 print("Vector DB 경로:", VECTOR_DB_PATH)
 
 vectorstore = FAISS.load_local(
