@@ -49,7 +49,15 @@ if LOCAL_DB_PATH.exists():
     VECTOR_DB_PATH = LOCAL_DB_PATH
 else:
     VECTOR_DB_PATH = SERVER_DB_PATH
+print("Vector DB 경로:", VECTOR_DB_PATH)
 
+vectorstore = FAISS.load_local(
+    str(VECTOR_DB_PATH),
+    embeddings,
+    allow_dangerous_deserialization=True
+)
+
+print("Vector DB 로드 완료")
 
 # =========================================================
 # GPT 모델
