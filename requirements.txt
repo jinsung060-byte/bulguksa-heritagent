@@ -12,3 +12,11 @@ langchain-community
 langchain-openai
 langchain-text-splitters
 faiss-cpu
+chainlit
+langchain
+langchain-openai
+langchain-community
+faiss-cpu
+openai
+python-dotenv
+tiktoken
